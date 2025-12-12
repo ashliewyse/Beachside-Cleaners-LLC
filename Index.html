@@ -1,8 +1,87 @@
-<div style="position: relative; width: 100%; height: 0; padding-top: 281.1127%;
- padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
- border-radius: 8px; will-change: transform;">
-  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-    src="https://www.canva.com/design/DAG7QyIt6Eg/XatMsTGVbnvYIJGLBNRRzQ/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-  </iframe>
-</div>
-<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAG7QyIt6Eg&#x2F;XatMsTGVbnvYIJGLBNRRzQ&#x2F;view?utm_content=DAG7QyIt6Eg&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Beachside Cleaners</a> by Ashlie Wyse
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nova — Modern Landing</title>
+  <meta name="description" content="Nova — A modern, responsive landing page template with vanilla HTML/CSS/JS." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔆</text></svg>">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#hero" aria-label="Nova Homepage">
+        <svg width="36" height="36" viewBox="0 0 24 24" aria-hidden="true">
+          <defs>
+            <linearGradient id="g1" x1="0" x2="1">
+              <stop offset="0" stop-color="#7c3aed"/>
+              <stop offset="1" stop-color="#06b6d4"/>
+            </linearGradient>
+          </defs>
+          <circle cx="12" cy="12" r="10" fill="url(#g1)"/>
+          <path d="M12 7 L15 15 L9 15 Z" fill="#fff"/>
+        </svg>
+        <span class="brand-name">Nova</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="cta">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle" aria-pressed="false" class="icon-btn" title="Toggle theme">🌗</button>
+        <button id="open-modal" class="btn primary">Get Started</button>
+        <button id="menu-toggle" class="icon-btn menu-btn" aria-expanded="false" aria-controls="mobile-menu" title="Open menu">☰</button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="mobile-menu" hidden>
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#about">About</a>
+      <a href="#contact" class="cta">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>Design fast. Launch faster.</h1>
+          <p class="lead">A modern, fully responsive landing page template built with vanilla HTML, CSS and JavaScript — accessible, themeable, and production-ready.</p>
+          <div class="hero-ctas">
+            <a href="#pricing" class="btn primary">View Plans</a>
+            <a href="#features" class="btn ghost">See Features</a>
+          </div>
+          <div class="trust">
+            <span>Trusted by</span>
+            <div class="logos">
+              <div class="logo-pill">Acme</div>
+              <div class="logo-pill">Orbit</div>
+              <div class="logo-pill">Nebula</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card" aria-hidden="true">
+          <div class="mock-window">
+            <div class="window-top">
+              <div class="dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="window-title">Nova Preview</div>
+            </div>
+            <div class="window-body">
+              <div class="highlight">Beautiful UI components · Fast performance · Accessibility</div>
+              <ul class="mini-features">
+                <li>Responsive grid</li>
+                <li>Dark & light themes</li>
+                <li>Form validation</li>
+             
