@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,44 +7,63 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
+  <!-- MOBILE STICKY BOOK BUTTON -->
+  <a href="#contact" class="sticky-book-btn">Book Now</a>
+
   <!-- HEADER -->
   <header class="header">
     <div class="container header-inner">
       <h1 class="logo">🌊 Beachside Cleaners</h1>
+
       <nav class="nav">
         <a href="#services">Services</a>
         <a href="#pricing">Pricing</a>
         <a href="#testimonials">Testimonials</a>
         <a href="#contact" class="btn-primary">Contact</a>
       </nav>
+
+      <!-- Theme toggle -->
+      <button id="themeToggle" class="theme-toggle">🌙</button>
     </div>
   </header>
 
   <!-- HERO -->
   <section class="hero" id="hero">
+    <div class="wave"></div>
     <div class="container hero-content">
       <h2>Keeping Your Beachside Homes Spotless</h2>
-      <p>Professional cleaning services for homes, rentals, and businesses. Reliable, eco-friendly, and just a call away.</p>
+      <p>Eco-friendly. Fast. Professional. The coastal cleaning experts you can trust.</p>
       <a href="#contact" class="btn-primary">Book a Cleaning</a>
     </div>
+
+    <!-- Animated Waves -->
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300">
+      <path fill="rgba(255,255,255,0.6)" d="M0,224L1440,32L1440,0L0,0Z"></path>
+      <path fill="rgba(255,255,255,0.4)" d="M0,288L1440,96L1440,0L0,0Z"></path>
+      <path fill="#ffffff" d="M0,320L1440,160L1440,0L0,0Z"></path>
+    </svg>
   </section>
 
   <!-- SERVICES -->
   <section class="services" id="services">
     <div class="container">
       <h2>Our Services</h2>
+
       <div class="service-cards">
         <div class="card">
-          <h3>Residential Cleaning</h3>
-          <p>Keep your home sparkling clean with our thorough residential cleaning services.</p>
+          <h3>🏡 Residential Cleaning</h3>
+          <p>Full home cleaning with eco-safe products and fresh ocean scent optional.</p>
         </div>
+
         <div class="card">
-          <h3>Vacation Rentals</h3>
-          <p>Fast and reliable turnover cleaning for vacation homes and rentals.</p>
+          <h3>🏖 Vacation Rentals</h3>
+          <p>Fast turnover cleaning perfect for Airbnb and short-term rental owners.</p>
         </div>
+
         <div class="card">
-          <h3>Commercial Spaces</h3>
-          <p>Maintain a pristine and welcoming environment for your office or business.</p>
+          <h3>🏢 Commercial Spaces</h3>
+          <p>Professional cleaning for offices, shops, and coastal businesses.</p>
         </div>
       </div>
     </div>
@@ -54,44 +73,61 @@
   <section class="pricing" id="pricing">
     <div class="container">
       <h2>Pricing Plans</h2>
+
       <div class="pricing-cards">
+
         <div class="card">
           <h3>Standard</h3>
-          <p>$100 per visit</p>
+          <p class="price">$100/visit</p>
           <ul>
             <li>Basic cleaning</li>
             <li>Eco-friendly products</li>
-            <li>1–2 hours service</li>
+            <li>1–2 hours</li>
           </ul>
           <a href="#contact" class="btn-primary">Book Now</a>
         </div>
-        <div class="card">
+
+        <div class="card popular">
           <h3>Premium</h3>
-          <p>$180 per visit</p>
+          <p class="price">$180/visit</p>
           <ul>
             <li>Deep cleaning</li>
             <li>All rooms & surfaces</li>
-            <li>2–4 hours service</li>
+            <li>2–4 hours</li>
           </ul>
           <a href="#contact" class="btn-primary">Book Now</a>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- TESTIMONIALS -->
+  <!-- TESTIMONIALS SLIDER -->
   <section class="testimonials" id="testimonials">
     <div class="container">
       <h2>What Our Clients Say</h2>
-      <div class="testimonial-cards">
-        <div class="card">
-          <p>"Beachside Cleaners kept our vacation rental spotless. Highly recommend!"</p>
-          <strong>- Sarah L.</strong>
+
+      <div class="slider">
+        <button class="slide-btn prev">‹</button>
+
+        <div class="slides">
+          <div class="slide active">
+            <p>"Beachside Cleaners made our rental shine. Our reviews went up instantly!"</p>
+            <strong>- Jenna M.</strong>
+          </div>
+
+          <div class="slide">
+            <p>"Reliable, friendly, and the best cleaning service near the coast!"</p>
+            <strong>- Daniel P.</strong>
+          </div>
+
+          <div class="slide">
+            <p>"They go above and beyond every time. Highly recommended."</p>
+            <strong>- Claire W.</strong>
+          </div>
         </div>
-        <div class="card">
-          <p>"Reliable, professional, and eco-friendly service. Love them!"</p>
-          <strong>- Mark R.</strong>
-        </div>
+
+        <button class="slide-btn next">›</button>
       </div>
     </div>
   </section>
@@ -100,19 +136,22 @@
   <section class="contact" id="contact">
     <div class="container">
       <h2>Contact Us</h2>
+
       <form id="contact-form">
         <input type="text" placeholder="Full Name" required>
         <input type="email" placeholder="Email" required>
         <textarea placeholder="Message" required></textarea>
         <button type="submit" class="btn-primary">Send Message</button>
       </form>
+
+      <p class="success-msg" id="successMsg">Message sent! 🌊</p>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2025 Beachside Cleaners. All rights reserved.</p>
+      <p>&copy; 2025 Beachside Cleaners • All Rights Reserved</p>
     </div>
   </footer>
 
